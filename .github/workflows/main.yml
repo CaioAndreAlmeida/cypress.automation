@@ -1,4 +1,4 @@
-name: Cypress automation - Chrome headless
+name: Cypress automation
 
 on: push
 
@@ -15,4 +15,3 @@ jobs:
           build: npm install
           start: npm run test
           browser: chrome
-          headless: true

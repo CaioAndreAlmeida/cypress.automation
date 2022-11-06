@@ -24,7 +24,7 @@ https://dashboard.cypress.io/projects/v2okwb/runs/2
 
 # cypress-report-browserstack-integration
 
- https://l1nq.com/9VJp8
+ https://l1nq.com/TRcjb
 
 
 # cypress-report-ci-pipeline-execution
