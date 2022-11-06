@@ -1,17 +1,14 @@
-name: Cypress automation
-
-on: push
-
+name: E2E on Chrome
+on: [push]
 jobs:
-  chrome-headless:
-    runs-on: ubuntu-18.04
+  cypress-run:
+    runs-on: ubuntu-20.04
+    # let's make sure our tests pass on Chrome browser
+    name: E2E on Chrome
     steps:
       - name: Checkout
-        uses: actions/checkout@v1
-      - name: Headless Chrome
-        uses: cypress-io/github-action@v4
-        timeout-minutes: 10
+        uses: actions/checkout@v2
+      - name: Cypress run
+        uses: cypress-io/github-action@v2
         with:
-          build: npm run build
-          start: npm start
           browser: chrome
