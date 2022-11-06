@@ -12,6 +12,6 @@ jobs:
         uses: cypress-io/github-action@v4
         timeout-minutes: 10
         with:
-          build: npm install
-          start: npm run test
+          build: npm run build
+          start: npm start
           browser: chrome
