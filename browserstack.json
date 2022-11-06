@@ -1,0 +1,46 @@
+{
+    "auth": {
+      "username": "caioandre2",
+      "access_key": "fi6vrPpep6pyWv5radjf"
+    },
+    "browsers": [
+      {
+        "os": "Windows 10",
+        "browser": "chrome",
+        "versions": ["92"]
+      }
+    ],
+    "run_settings": {
+      "cypress_version": "8.latest",
+      "cypress_config_file": "./cypress.json",
+      "project_name": "e2e tests cypress automation",
+      "build_name": "Teste - Tecnologia Unica",
+      "exclude": [],
+      "parallels": "1",
+      "downloads": ["./cypress/cucumber-json/"],
+      "npm_dependencies": {
+        "cypress": "8.7.0",
+        "cypress-cucumber-preprocessor": "^4.3.0"
+      },
+      "package_config_options": {
+        "cypress-cucumber-preprocessor": {
+          "step_definitions": "./cypress/support/steps",
+          "cucumberJson": {
+            "generate": true,
+            "outputFolder": "cypress/cucumber-json",
+            "filePrefix": "",
+            "fileSuffix": ".cucumber"
+          }
+        }
+      },
+      "callback_url": ""
+    },
+    "connection_settings": {
+      "local": true,
+      "local_identifier": "CypressLocalConnection1",
+      "local_mode": null,
+      "local_config_file": null
+    },
+    "disable_usage_reporting": false
+  }
+  

@@ -1,0 +1,11 @@
+{
+  "baseUrl": "https://www.amazon.com.br/",
+  "integrationFolder": "cypress/integration",
+  "defaultCommandTimeout": 20000,
+  "video": true,
+  "retries": 2,
+  "chromeWebSecurity": false,
+  "viewportWidth": 1920,
+  "viewportHeight": 1080,
+  "projectId": "v2okwb"
+}

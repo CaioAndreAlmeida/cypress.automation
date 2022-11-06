@@ -1,0 +1,9 @@
+log/*
+.DS_Store
+cypress/videos/*
+allure-report/*
+allure-results/*
+results/*
+cucumber-json
+node_modules
+package-lock

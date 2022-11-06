@@ -1,0 +1,47 @@
+{
+  "name": "cypress.automation.test",
+  "version": "1.0.0",
+  "description": "e2e tests with cypress and cucumber",
+  "main": "index.js",
+  "scripts": {
+    "test": "cypress run --browser chrome --headless",
+    "test:browserstack": "browserstack-cypress run",
+    "test:dashboardcypress": "npx cypress run --record --key dc56a079-f80b-4e52-b694-5ec968593101"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "bugs": {
+    "url": ""
+  },
+  "homepage": "",
+  "keywords": [
+    "cypress",
+    "cucumber",
+    "regression",
+    "test",
+    "e2e"
+  ],
+  "author": "Caio Andre",
+  "license": "ISC",
+  "devDependencies": {
+    "browserstack-cypress-cli": "^1.11.0",
+    "cypress": "^8.7.0",
+    "cypress-cucumber-preprocessor": "^4.3.1"
+  },
+  "cypress-cucumber-preprocessor": {
+    "step_definitions": "cypress/support/steps",
+    "cucumberJson": {
+      "generate": true,
+      "outputFolder": "cypress/cucumber-json",
+      "filePrefix": "",
+      "fileSuffix": ".cucumber"
+    }
+  },
+  "dependencies": {
+    "browserstack-cypress-cli": "^1.11.0",
+    "cypress": "^8.7.0",
+    "cypress-cucumber-preprocessor": "^4.3.1"
+  }
+}
